@@ -4,17 +4,17 @@ Um sistema ainda em desenvolvimento, com a ideia de ser um sistema mais avançad
 ### Como usar? 
 Baixe o repositório e inicie o index.html. Note que terá usuário e senha 
 
-### Login
+### Login ###
 Usuário: admin
 Senha: 1234
 
-### Armazenamento
+### Armazenamento ###
 Banco de dados é usado em LocalStorage, caso venha a apagar seu cache e cookies do navagador, os dados salvos serão perdidos. 
 
-### Avisos
+### Avisos ###
 O sistema ainda está em desenvolvimento, por isso alguns bugs serão encontrados
 
-#Imagens do projeto:
+# Imagens do projeto:
 ![Página Inicial](Imagens/Home1.png)
 
 # ![Página Inicial 2](Imagens/Home2.png)
