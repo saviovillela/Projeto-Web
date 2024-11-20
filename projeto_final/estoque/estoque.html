@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/estoque/estoque.css">
+</head>
+<body>
+
+    <!-- Navbar Vertical -->
+    <nav class="navbar-vertical d-flex flex-column align-items-start p-3">
+        <a href="/Pagina_inicial/pagina_inicial.html" class="nav-item" title="Voltar">
+            <i class="bi bi-arrow-left-circle icone-navbar"></i>
+            <span class="nav-text">Voltar</span>
+        </a>
+    </nav>
+
+    <div class="container-cadastro">
+        <!-- Tabela de Estoque -->
+        <div class="formulario-cadastro">
+            <h2 class="text-neon">Estoque de Produtos</h2>
+            <table id="estoque-table" class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Nome do Produto</th>
+                        <th>Preço</th>
+                        <th>Tipo</th>
+                        <th>Ações</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os dados serão carregados via JavaScript -->
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer d-flex justify-content-between px-3">
+        <div class="text-neon">&copy; 2024 TechVille - Todos os direitos reservados.</div>
+        <div class="text-neon">
+            <a href="#" class="link-rodape">Termos de Acordo</a> | 
+            <a href="#" class="link-rodape">Políticas de Privacidade</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/estoque/estoque.js"></script>
+</body>
+</html>

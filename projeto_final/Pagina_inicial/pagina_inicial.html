@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Pagina_inicial/pagina_inicial.css">
+</head>
+<body>
+    <div class="container-fluid vh-100 d-flex">
+
+        <!-- Navbar Vertical -->
+        <nav class="navbar-vertical d-flex flex-column align-items-start p-3">
+            <a href="index.html" class="nav-item" title="Desligar">
+                <i class="bi bi-power icone-navbar"></i>
+                <span class="nav-text">Desligar</span>
+            </a>
+            <a href="#" class="nav-item" title="Configurações">
+                <i class="bi bi-gear icone-navbar"></i>
+                <span class="nav-text">Configurações</span>
+            </a>
+            <a href="#" class="nav-item" title="Contato">
+                <i class="bi bi-person icone-navbar"></i>
+                <span class="nav-text">Contato</span>
+            </a>
+            
+            <!-- Redes Sociais -->
+            <div class="social-icons mt-5 mb-5"> 
+                <a href="https://www.instagram.com/" target="_blank" class="nav-item" title="Instagram"><i class="bi bi-instagram icone-navbar"></i><span class="nav-text">Instagram</span></a>
+                <a href="https://workspace.google.com/intl/pt-BR/gmail/" target="_blank" class="nav-item" title="Gmail"><i class="bi bi-envelope icone-navbar"></i><span class="nav-text">Gmail</span></a>
+                <a href="https://www.facebook.com/" target="_blank" class="nav-item" title="Facebook"><i class="bi bi-facebook icone-navbar"></i><span class="nav-text">Facebook</span></a>
+                <a href="https://x.com/?lang=pt-br" target="_blank" class="nav-item" title="Twitter"><i class="bi bi-twitter icone-navbar"></i><span class="nav-text">Twitter</span></a>
+            </div>
+        </nav>
+
+        <div class="conteudo-central d-flex flex-column align-items-center justify-content-center flex-grow-1 ms-5">
+            
+            <div class="logo-container text-center mb-4">
+                <a href="#" class="logo-text-link">
+                    <img src="logo.png" alt="Logo TechVille" class="img-fluid logo-img">
+                    <p class="logo-text">TechVille</p>
+                </a>
+            </div>
+
+            <!-- Barra de Pesquisa -->
+            <div class="pesquisa-container">
+                <input type="text" id="campo-pesquisa" class="form-control" placeholder="Pesquisar...">
+                <button onclick="validarPesquisa()" class="btn btn-pesquisa"><i class="bi bi-search"></i></button>
+                <p id="mensagem-erro" class="text-danger"></p>
+            </div>
+
+            <!-- Ícones Centrais -->
+            <div class="icones-centrais row text-center gap-3">
+                <div class="col icon-box">
+                    <a href="#" title="Configuração"><i class="bi bi-tools icone-central"></i></a>
+                    <a href="#" class="texto-icone">Configuração</a>
+                </div>
+                <div class="col icon-box">
+                    <a href="/cadastro/cadastro.html" title="Cadastro de Pessoas"><i class="bi bi-person-plus icone-central"></i></a>
+                    <a href="/cadastro/cadastro.html" class="texto-icone">Cadastro de Funcionários</a>
+                </div>
+                <div class="col icon-box">
+                    <a href="/cadastro_produtos/cadastro_produtos.html" title="Cadastro de Produtos"><i class="bi bi-box-seam icone-central"></i></a>
+                    <a href="/cadastro_produtos/cadastro_produtos.html" class="texto-icone">Cadastro de Produtos</a>
+                </div>
+
+                <div class="col icon-box">
+                    <a href="/estoque/estoque.html" title="Estoque"><i class="bi bi-boxes icone-central"></i></a>
+                    <a href="/estoque/estoque.html" class="texto-icone">Estoque</a>
+                </div>
+                <div class="col icon-box">
+                    <a href="/financeiro/financeiro.html" title="Financeiro"><i class="bi bi-currency-dollar icone-central"></i></a>
+                    <a href="/financeiro/financeiro.html" class="texto-icone">Financeiro</a>
+                </div>
+                <div class="col icon-box">
+                    <a href="/servico/servico.html" title="Serviços"><i class="bi bi-briefcase icone-central"></i></a>
+                    <a href="/servico/servico.html" class="texto-icone">Serviços</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer d-flex justify-content-between px-3">
+        <div class="text-neon">&copy; 2024 TechVille - Todos os direitos reservados.</div>
+        <div class="text-neon">
+            <a href="#" class="link-rodape">Termos de Acordo</a> | 
+            <a href="#" class="link-rodape">Políticas de Privacidade</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/Pagina_inicial/paginal_inicial.js"></script>
+</body>
+</html>

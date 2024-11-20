@@ -1,0 +1,192 @@
+body {
+    background: linear-gradient(45deg, #000000, #001300);
+    color: #39ff14;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    min-height: 100vh; 
+}
+
+/* Navbar Vertical */
+.navbar-vertical {
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    position: fixed;
+    height: calc(100% - 50px);
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    transition: width 0.3s;
+    z-index: 1;
+}
+
+.navbar-vertical:hover {
+    width: 200px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 15px 0;
+    text-decoration: none;
+    color: #39ff14;
+}
+
+.nav-item:hover .nav-text {
+    color: #66ff66;
+}
+
+.navbar-vertical:hover .nav-item {
+    justify-content: flex-start;
+}
+
+.nav-text {
+    display: none;
+    color: white;
+    margin-left: 10px;
+}
+
+.navbar-vertical:hover .nav-text {
+    display: inline-block;
+}
+
+/* Container dos serviços/pagamentos */
+.container-servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    margin-top: 60px;
+    color: #39ff14;
+}
+
+/* Estilo do formulário */
+form {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    color: #130600;
+}
+
+form label {
+    color: #39ff14;
+    font-weight: bold;
+}
+
+.input-cadastro {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #39ff14;
+    background-color: white;
+    color: #001300;
+}
+
+.input-cadastro:focus {
+    background-color: #ffffff;
+    border-color: #66ff66;
+}
+
+/* Botão neon */
+.btn-neon {
+    background-color: #39ff14;  
+    border-color: #39ff14;      
+    color: #001300;             
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Botão neon com hover */
+.btn-neon:hover {
+    background-color: #66ff66;  
+    border-color: #66ff66;      
+}
+
+/* Cartões exibidos */
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #39ff14;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* Botões dos cards */
+.card .btn {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .navbar-vertical {
+        width: 60px;
+    }
+
+    .navbar-vertical .nav-item {
+        font-size: 0.9em;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .btn-neon {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
+
+/* Rodapé */
+.footer {
+    background-color: #000000;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-neon {
+    color: #39ff14;
+}
+
+.link-rodape {
+    color: #39ff14;
+    text-decoration: none;
+}
+
+.link-rodape:hover {
+    color: #66ff66;
+}

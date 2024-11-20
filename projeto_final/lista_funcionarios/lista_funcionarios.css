@@ -1,0 +1,126 @@
+/* Fundo com degradê */
+body {
+    background: linear-gradient(45deg, #000000, #001300);
+}
+
+/* Logo Fora da Borda - Centralizada e Acima da Tabela */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; /* Mais espaço acima da logo */
+}
+
+.logo-img {
+    max-width: 120px;
+}
+
+/* Caixa de funcionários - Borda centralizada e com mais espaço acima */
+.caixa-lista-funcionarios {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%; /* Ajuste de largura para mover mais para a esquerda */
+    max-width: 800px; /* Largura máxima da borda */
+    padding: 10px;
+    margin: 120px 50px 100px; /* Aumento da margem superior para descer mais a borda */
+}
+
+/* Título */
+h2.text-neon {
+    color: #39ff14;
+    font-size: 2em;
+}
+
+/* Tabela de funcionários - Tamanho reduzido */
+.table {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    text-align: center;
+    padding: 10px;
+}
+
+.table td {
+    border-radius: 5px;
+}
+
+/* Navbar Vertical */
+.navbar-vertical {
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    position: fixed;
+    height: calc(100% - 50px);
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    transition: width 0.3s;
+    z-index: 1;
+}
+
+.navbar-vertical:hover {
+    width: 200px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 15px 0;
+    text-decoration: none;
+    color: #39ff14;
+    
+}
+
+.nav-item:hover .nav-text {
+    color: #66ff66;
+}
+
+.navbar-vertical:hover .nav-item {
+    justify-content: flex-start;
+}
+
+.nav-text {
+    display: none;
+    color: white;
+    margin-left: 10px;
+}
+
+.navbar-vertical:hover .nav-text {
+    display: inline-flex;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #000000;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-neon {
+    color: #39ff14;
+}
+.link-rodape {
+    color: #39ff14;
+    text-decoration: none;
+}
+.link-rodape:hover {
+    color: #66ff66;
+}
