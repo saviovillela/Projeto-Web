@@ -17,3 +17,27 @@ body {
     background-color: #003300;
     color: #ffffff;
 }
+
+/* Rodapé */
+.footer {
+    background-color: #000000;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-neon {
+    color: #39ff14;
+}
+.link-rodape {
+    color: #39ff14;
+    text-decoration: none;
+}
+.link-rodape:hover {
+    color: #66ff66;
+}

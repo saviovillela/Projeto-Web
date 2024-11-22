@@ -3,19 +3,18 @@ body {
     background: linear-gradient(45deg, #000000, #001300);
 }
 
-/* Logo Fora da Borda - Centralizada e Acima da Tabela */
+
 .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px; /* Mais espaço acima da logo */
+    margin-top: 40px; 
 }
 
 .logo-img {
     max-width: 120px;
 }
 
-/* Caixa de funcionários - Borda centralizada e com mais espaço acima */
 .caixa-lista-funcionarios {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
@@ -24,19 +23,17 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 80%; /* Ajuste de largura para mover mais para a esquerda */
-    max-width: 800px; /* Largura máxima da borda */
+    width: 80%; 
+    max-width: 800px; 
     padding: 10px;
-    margin: 120px 50px 100px; /* Aumento da margem superior para descer mais a borda */
+    margin: 120px 50px 100px; 
 }
 
-/* Título */
 h2.text-neon {
     color: #39ff14;
     font-size: 2em;
 }
 
-/* Tabela de funcionários - Tamanho reduzido */
 .table {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
